@@ -1,0 +1,274 @@
+@charset "UTF-8";
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+    font-size: 14px;
+    font-family: HiraKakuProN-W3,"ヒラギノ角ゴ ProN W3",Helvetica,sans-serif;
+    color: #3a3a3a;
+    width: 100%;
+    min-width: 320px;
+    -webkit-text-size-adjust: none;
+    background: #fff;
+}
+
+nav ul {
+    list-style:none;
+}
+
+/*header*/
+#header {
+    background:rgb(32,56,100);
+    border-bottom: 1px solid #ddd;
+    height: 49px;
+    position: relative;
+    width: 100%;
+}
+.button {
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url('../img/menu_button_back.png');
+    background-position: center;
+}
+.menu-button-left {
+    left: 0px;
+    border-right: 1px solid #ddd;
+}
+.menu-button-right {
+    right: 0px;
+    border-left: 1px solid #ddd;
+}
+
+
+
+/*slidemenu*/
+.slidemenu {
+    background-color: rgb(61, 61, 61);
+}
+.slidemenu li {
+    list-style: none;
+    border-top: 1px solid #4D4D4D;
+    border-bottom: 1px solid #000;
+    font-size:14px;
+    line-height: 1.8;
+}
+.slidemenu li a {
+    padding:10px 0 10px 20px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+.slidemenu li:first-child {
+    border-top: none;
+}
+.slidemenu li:last-child {
+    border-bottom: none;
+}
+.slidemenu .slidemenu-header {
+    height: 49px;
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 3px rgba(34,25,25,.4);
+    -moz-box-shadow: 0 1px 3px rgba(34,25,25,.4);
+    -webkit-box-shadow: 0 1px 3px rgba(34,25,25,.4);
+    background-color: #333;
+}
+.slidemenu .slidemenu-header div {
+    padding: 17px 0px 0px 19px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.slidemenu .slidemenu-header .user_photo {
+  padding: 17px 0px 0px 0px;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.slidemenu .slidemenu-header .user_logintime {
+  padding: 10px 0px 0px 0px;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+/*main*/
+#main {
+    background: #FFFFFF;
+}
+#contents {
+    padding: 20px;
+}
+#contents h1 {
+    font-size: 18px;
+}
+#contents p {
+    margin-top: 15px;
+}
+
+/*plugin*/
+#main {
+  z-index: 1;
+}
+.slidemenu {
+  top: 0;
+  width: 240px;
+  position: fixed;
+  visibility: hidden;
+  z-index: -1;
+}
+.slidemenu .slidemenu-header {
+  position: relative;
+  height: 280px;
+  text-align: center;
+}
+.slidemenu .slidemenu-body {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.slidemenu .slidemenu-body .slidemenu-content {
+  position: relative;
+}
+.slidemenu-left {
+    left: 0;
+}
+.slidemenu-right {
+    right: 0;
+}
+
+
+form{
+    /* background:#818585;
+     width:700px;
+     padding:20px 40px; */
+   }
+   form div {
+     padding: 10px 20px;
+   }
+   h1 {
+     text-align:center;
+     font-size:30px;
+     color:#fff;
+   }
+   input.submit {
+     display:block;
+     margin:0 200px;
+     border:none;
+   }
+   label {
+     /* display:block;
+     float:left; */
+     width:500px;
+     font-size: large;
+     color:rgb(29, 28, 28);
+   }
+   /* span {
+     background:#F8E71C;
+     padding:4px 4px;
+     font-size:12px;
+     color:#000;
+     margin-right:10px;
+     border-radius: 3px;
+   } */
+   .text, textarea, .dropdown{
+     border:0px ;
+     padding: 8px;
+     color: #000;
+     background: #F5F5F5;
+     border-radius: 6px;
+     -webkit-box-shadow: 2px 3px 2px #000;
+     -moz-box-shadow: 2px 3px 2px #000;
+   }
+
+   td, th {
+    padding: 5px 10px;
+}
+
+thead th {
+    background: #110303;
+    color: #fff;
+}
+
+tbody tr {
+    border-bottom: 1px dotted #D8D5D5;
+}
+
+tbody td {
+    border: 1px dotted #D8D5D5;
+    border-width: 0px 1px;
+    -webkit-transition: background-color .1s linear;
+    -moz-transition: background-color .1s linear;
+    transition: background-color .1s linear;
+}
+
+tbody tr:first-child {
+    border-top: none;
+}
+
+tbody tr.even td {
+    background: #fbfbfb;
+}
+
+tbody tr.clickable:hover td {
+    background: #c2d8f5;
+    cursor: pointer;
+}
+
+
+/* desert scheme ported from vim to google prettify */
+pre.prettyprint { display: block; background-color: #333 }
+pre .nocode { background-color: none; color: #000 }
+pre .str { color: #ffa0a0 } /* string  - pink */
+pre .kwd { color: #f0e68c; font-weight: bold }
+pre .com { color: #87ceeb } /* comment - skyblue */
+pre .typ { color: #98fb98 } /* type    - lightgreen */
+pre .lit { color: #cd5c5c } /* literal - darkred */
+pre .pun { color: #fff }    /* punctuation */
+pre .pln { color: #fff }    /* plaintext */
+pre .tag { color: #f0e68c; font-weight: bold } /* html/xml tag    - lightyellow */
+pre .atn { color: #bdb76b; font-weight: bold } /* attribute name  - khaki */
+pre .atv { color: #ffa0a0 } /* attribute value - pink */
+pre .dec { color: #98fb98 } /* decimal         - lightgreen */
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums { margin-top: 0; margin-bottom: 0; color: #AEAEAE } /* IE indents via margin-left */
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: none }
+/* Alternate shading for lines */
+li.L1,li.L3,li.L5,li.L7,li.L9 { }
+
+@media print {
+  pre.prettyprint { background-color: none }
+  pre .str, code .str { color: #060 }
+  pre .kwd, code .kwd { color: #006; font-weight: bold }
+  pre .com, code .com { color: #600; font-style: italic }
+  pre .typ, code .typ { color: #404; font-weight: bold }
+  pre .lit, code .lit { color: #044 }
+  pre .pun, code .pun { color: #440 }
+  pre .pln, code .pln { color: #000 }
+  pre .tag, code .tag { color: #006; font-weight: bold }
+  pre .atn, code .atn { color: #404 }
+  pre .atv, code .atv { color: #060 }
+}
